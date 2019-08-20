@@ -34,7 +34,7 @@ Make sure you already installed React Native and have emulator or real device ru
 
 Run the database file on your different terminal
 
-```json-server --watch --host {your IP address}  db.json```
+```json-server --watch --host {your-IP-address}  db.json```
 
 ## Note:
 File  ```index.js ``` should be as root reducers. It's located in welcome>reducers>index.js
