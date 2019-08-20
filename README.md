@@ -16,11 +16,17 @@ Then replace with IPv4 Address in your computer. Make sure your device (mobile a
 
 ## How to Run
 
-**Open terminal, and clone this project**
+**1.Open terminal, and clone this project**
 ```
 $ git clone https://github.com/mnuzulia/My-Spotipai.git
 ```
-**Mobile Frontend (React Native):**
+**2.Run Mock API using json-server**
+
+Run the database file on your terminal
+
+```json-server --watch --host {your-IP-address}  db.json```
+
+**3.Mobile Frontend (React Native):**
 
 Make sure you already installed React Native and have emulator or real device running. If not visit this page https://facebook.github.io/react-native/docs/getting-started.html
 
@@ -28,13 +34,8 @@ Make sure you already installed React Native and have emulator or real device ru
 
 ```$ npm install``` to install project dependencies.
 
-```$ react-native run-android``` to run the app
+```$ react-native run-android``` to run this command on different terminal with json-server terminal
 
-**Run Mock API using json-server**
-
-Run the database file on your different terminal
-
-```json-server --watch --host {your-IP-address}  db.json```
 
 ## Note:
 File  ```index.js ``` should be as root reducers. It's located in welcome>reducers>index.js
