@@ -18,6 +18,12 @@ Make sure you already installed React Native and have emulator or real device ru
 
 ```$ react-native run-android``` to run the app
 
+**Run Mock API using json-server**
+
+Run the database file on your different terminal
+
+```json-server --watch --host {your IP address}  db.json```
+
 
 ## Configuring IP Address
 
