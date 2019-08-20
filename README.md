@@ -1,5 +1,5 @@
 # My-Spotipai
-This is final project that clone spotify app using react native
+This is final project that clone spotify app using react native and redux
 
 
 ## How to Run
