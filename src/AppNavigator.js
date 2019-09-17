@@ -1,11 +1,10 @@
 import React from "react";
+import { Platform, StatusBar } from "react-native";
 import {
   createStackNavigator,
-  createAppContainer,
   createBottomTabNavigator
 } from "react-navigation";
 import { Icon } from "native-base";
-// import Icon from "react-native-vector-icons/Ionicons";
 import SplashScreen from "./welcome/screens/SplashScreen";
 import WelcomeScreen from "./welcome/screens/WelcomeScreen";
 import LoginScreen from "./welcome/screens/LoginScreen";
@@ -14,7 +13,6 @@ import HomeScreen from "./home/screens/HomeScreen";
 import SearchScreen from "./search/screens/SearchScreen";
 import LibraryScreen from "./library/screens/LibraryScreen";
 import NowPlayingScreen from "./library/screens/NowPlayingScreen";
-// import NowPlayingScreen from "./library/screens/NowPlayingScreen";
 import { Color } from "./assets/styles/Color";
 
 const bottomNavigator = createBottomTabNavigator(
@@ -80,7 +78,8 @@ const AppNavigator = createStackNavigator(
         title: "Login",
         headerStyle: {
           backgroundColor: Color.grey01,
-          elevation: 0
+          elevation: 0,
+          marginTop: 24
         },
         headerTintColor: "#fff",
         headerTitleStyle: {
@@ -96,7 +95,8 @@ const AppNavigator = createStackNavigator(
         title: "Register",
         headerStyle: {
           backgroundColor: Color.grey01,
-          elevation: 0
+          elevation: 0,
+          marginTop: 24
         },
         headerTintColor: "#fff",
         headerTitleStyle: {
@@ -124,4 +124,4 @@ const AppNavigator = createStackNavigator(
   }
 );
 
-export default createAppContainer(AppNavigator);
+export default AppNavigator;

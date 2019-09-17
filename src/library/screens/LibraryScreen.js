@@ -1,5 +1,12 @@
 import React from "react";
-import { Image, Text, View, StyleSheet, FlatList, StatusBar } from "react-native";
+import {
+  Image,
+  Text,
+  View,
+  StyleSheet,
+  FlatList,
+  StatusBar
+} from "react-native";
 import TrackPlayer from "react-native-track-player";
 import { connect } from "react-redux";
 import { libraryStyles as style } from "../../assets/styles/libraryStyles";

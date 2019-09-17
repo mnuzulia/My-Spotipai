@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     position: "relative",
     top: 10,
     width: "98%",
-    height: 700
+    height: 1550
   },
 
   content: {

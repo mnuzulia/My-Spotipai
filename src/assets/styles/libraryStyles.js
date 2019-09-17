@@ -12,7 +12,7 @@ export const libraryStyles = {
     zIndex: 1,
     width: "80%",
     alignSelf: "center",
-    top: 15
+    top: 30
   },
   title: {
     alignSelf: "center",
