@@ -1,12 +1,6 @@
 import React from "react";
 import { Image, View, StatusBar } from "react-native";
-
-// const SplashScreen = () => {
-//   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-//     <Text>Ini Logo Spotipai</Text>
-//   </View>;
-// };
-
+import { StackActions, NavigationActions } from "react-navigation";
 class SplashScreen extends React.Component {
   constructor(props) {
     super(props);
@@ -16,7 +10,11 @@ class SplashScreen extends React.Component {
 
   componentDidMount() {
     setTimeout(() => {
-      this.props.navigation.navigate("Welcome");
+      const resetAction = StackActions.reset({
+        index: 0,
+        actions: [NavigationActions.navigate({ routeName: "Welcome" })]
+      });
+      this.props.navigation.dispatch(resetAction);
     }, 1000);
   }
 

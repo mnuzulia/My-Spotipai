@@ -67,6 +67,7 @@ class Library extends React.Component {
               </View>
             </View>
           )}
+          keyExtractor={(item, index) => index.toString()}
         />
       </View>
     );
