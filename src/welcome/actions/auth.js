@@ -14,7 +14,7 @@ export function postLogin(data) {
   return dispatch => {
     //   console.log('asassaass')
     axios
-      .get("http://192.168.43.12:3000/auth", {
+      .post("http://18.223.162.119:3008/api/login", {
         email: data.email,
         password: data.password
       })
